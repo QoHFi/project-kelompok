@@ -104,3 +104,118 @@ body.gelap .card {
     gap: 14px;
   }
 }
+
+/* ===== BAGIAN BERANDA ===== */
+
+/* Hero / banner */
+.hero {
+  text-align: center;
+  padding: 56px 24px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1f3864, #2f5597);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+}
+
+/* Tombol */
+.tombol {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #1f3864;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.tombol:hover {
+  background-color: #dbe5f7;
+  transform: translateY(-2px);
+}
+
+/* Informasi singkat */
+.info-singkat {
+  background-color: white;
+  border-left: 5px solid #1f3864;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.info-singkat h3 {
+  margin-bottom: 10px;
+  color: #1f3864;
+}
+
+/* Bagian card */
+.beranda-card h3 {
+  margin-bottom: 16px;
+  color: #1f3864;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card-isi h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #1f3864;
+}
+
+.card-isi p {
+  margin-bottom: 14px;
+}
+
+.card-isi a {
+  color: #2f5597;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-isi a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Mode gelap untuk bagian beranda */
+body.gelap .info-singkat {
+  background-color: #1c2538;
+  border-left-color: #6d9eeb;
+}
+
+body.gelap .info-singkat h3,
+body.gelap .beranda-card h3,
+body.gelap .card-isi h4 {
+  color: #9fc0ff;
+}
+
+body.gelap .card-isi a {
+  color: #9fc0ff;
+}
+
+body.gelap .hero {
+  background: linear-gradient(135deg, #16223f, #24407a);
+}
